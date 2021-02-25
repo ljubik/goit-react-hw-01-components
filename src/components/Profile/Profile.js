@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Profile.module.css";
-
+import PropTypes from "prop-types";
 
 function Profile({name, tag, location, avatar, stats}) {
 
@@ -36,3 +36,28 @@ function Profile({name, tag, location, avatar, stats}) {
 }
 
 export default Profile;
+
+Profile.defaultProps = {
+  name: "Anonymus",
+  tag: "unique",
+  location: "Erth",
+  avatar: "https://www.flaticon.com/svg/static/icons/svg/1998/1998749.svg",
+  stats: {
+    followers: 0,
+    views: 0,
+    likes: 0
+  }
+};
+
+
+Profile.propTypes = {
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number
+  })
+};

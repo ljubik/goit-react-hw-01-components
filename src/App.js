@@ -6,7 +6,7 @@ import Transaction from "./components/TransactionHistory/TransactionHistory";
 
 import user from "./db/user.json";
 import transaction from "./db/transactions.json";
-
+import statisticalData from "./db/statistical-data.json"
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics />
+      <Statistics title="Upload stats" stats={statisticalData} />
       <Transaction transaction= {transaction} />
     </>
   );
