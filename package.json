@@ -1,8 +1,8 @@
 {
-  "name": "my-react-starter",
+  "name": "goit-react-hw-01-components",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ljubik.github.io/my-react-starter/",
+  "homepage": "https://ljubik.github.io/goit-react-hw-01-components/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
