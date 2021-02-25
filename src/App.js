@@ -4,22 +4,23 @@ import Statistics from "./components/Statistics/Statistics";
 // import Frendlist from "./components/FriendList/FriendList";
 import Transaction from "./components/TransactionHistory/TransactionHistory";
 
-import user from "./db/user.json";
-import transaction from "./db/transactions.json";
-import statisticalData from "./db/statistical-data.json"
+import userDB from "./db/user.json";
+import statisticalDataDB from "./db/statistical-data.json"
+import transactionDB from "./db/transactions.json";
+
 
 function App() {
   return (
     <>
       <Profile
-        name={user.name}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
+        name={userDB.name}
+        tag={userDB.tag}
+        location={userDB.location}
+        avatar={userDB.avatar}
+        stats={userDB.stats}
       />
-      <Statistics title="Upload stats" stats={statisticalData} />
-      <Transaction transaction= {transaction} />
+      <Statistics stats={statisticalDataDB} title="Upload stats"/>
+      <Transaction transaction= {transactionDB} />
     </>
   );
 }

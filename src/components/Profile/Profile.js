@@ -35,8 +35,6 @@ function Profile({name, tag, location, avatar, stats}) {
   );
 }
 
-export default Profile;
-
 Profile.defaultProps = {
   name: "Anonymus",
   tag: "unique",
@@ -49,7 +47,6 @@ Profile.defaultProps = {
   }
 };
 
-
 Profile.propTypes = {
   name: PropTypes.string,
   tag: PropTypes.string,
@@ -61,3 +58,5 @@ Profile.propTypes = {
     likes: PropTypes.number
   })
 };
+
+export default Profile;
