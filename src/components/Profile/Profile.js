@@ -13,7 +13,7 @@ function Profile({name, tag, location, avatar, stats}) {
           className={style.avatar}
         />
         <p className={style.name}>{name}</p>
-        <p className={style.tag}>{tag}</p>
+        <p className={style.tag}>@{tag}</p>
         <p className={style.location}>{location}</p>
       </div>
 

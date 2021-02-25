@@ -1,8 +1,14 @@
 .profile {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
   padding: 0px;
-  margin: 0;
   width: 300px;
   border: 1px solid rgb(238, 237, 237);
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
 }
 
 .description {
@@ -17,8 +23,19 @@
   width: 150px;
 }
 
+.name {
+  color: rgb(0, 0, 0);
+}
+
+.tag {
+  color: rgb(85, 83, 83);
+}
+
+.location {
+  color: rgb(85, 83, 83);
+}
+
 .stats {
-  width: 300px;
   height: 100px;
   padding: 0;
   margin: 0;
@@ -26,7 +43,10 @@
   flex-wrap: nowrap;
   list-style: none;
 }
+
 .list {
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: calc(300px / 3);
   background: #c4cbdfca;
   border: 1px solid gray;
@@ -38,8 +58,14 @@
 .label {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 20%;
+  padding-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(85, 83, 83);
 }
 
 .quantity {
   height: auto;
+  color: rgb(0, 0, 0);
 }
