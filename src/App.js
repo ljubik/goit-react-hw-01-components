@@ -1,9 +1,11 @@
 import "./App.css";
 import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistics/Statistics";
+// import Frendlist from "./components/FriendList/FriendList";
 import Transaction from "./components/TransactionHistory/TransactionHistory";
-import Frendlist from "./components/FriendList/FriendList";
+
 import user from "./db/user.json";
+import transaction from "./db/transactions.json";
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
     <>
       <Profile user = {user} />
       <Statistics />
+      <Transaction transaction= {transaction} />
     </>
   );
 }
