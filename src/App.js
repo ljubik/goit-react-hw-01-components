@@ -11,7 +11,13 @@ import transaction from "./db/transactions.json";
 function App() {
   return (
     <>
-      <Profile user = {user} />
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <Statistics />
       <Transaction transaction= {transaction} />
     </>

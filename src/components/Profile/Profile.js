@@ -2,36 +2,36 @@ import React from "react";
 import style from "./Profile.module.css";
 
 
-function Profile({ user }) {
+function Profile({name, tag, location, avatar, stats}) {
 
   return (
-  <div className={style.profile}>
-    <div className="description">
-      <img
-        src="https://i.pinimg.com/originals/a0/40/66/a04066a2d1fcf25df39c599e093995c8.jpg"
-        alt="user avatar"
-        className="avatar"
-      />
-      <p className="name">Petra Marica</p>
-      <p className="tag">@pmarica</p>
-      <p className="location">Salvador, Brasil</p>
-    </div>
+    <div className={style.profile}>
+      <div className={style.description}>
+        <img
+          src={avatar}
+          alt="user avatar"
+          className={style.avatar}
+        />
+        <p className={style.name}>{name}</p>
+        <p className={style.tag}>{tag}</p>
+        <p className={style.location}>{location}</p>
+      </div>
 
-    <ul className="stats">
-      <li>
-        <span className="label">Followers</span>
-        <span className="quantity">1000</span>
-      </li>
-      <li>
-        <span className="label">Views</span>
-        <span className="quantity">2000</span>
-      </li>
-      <li>
-        <span className="label">Likes</span>
-        <span className="quantity">3000</span>
-      </li>
-    </ul>
-  </div>
+      <ul className={style.stats}>
+        <li className={style.list}>
+          <span className={style.label}>Followers</span>
+          <span className={style.quantity}>{stats.followers}</span>
+        </li>
+        <li className={style.list}>
+          <span className={style.label}>Views</span>
+          <span className={style.quantity}>{stats.views}</span>
+        </li>
+        <li className={style.list}>
+          <span className={style.label}>Likes</span>
+          <span className={style.quantity}>{stats.likes}</span>
+        </li>
+      </ul>
+    </div>
   );
 }
 
