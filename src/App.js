@@ -1,11 +1,12 @@
 import "./App.css";
 import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistics/Statistics";
-// import Frendlist from "./components/FriendList/FriendList";
+import Frendlist from "./components/FriendList/FriendList";
 import Transaction from "./components/TransactionHistory/TransactionHistory";
 
 import userDB from "./db/user.json";
-import statisticalDataDB from "./db/statistical-data.json"
+import statisticalDataDB from "./db/statistical-data.json";
+import frendslistDB from "./db/frends.json";
 import transactionDB from "./db/transactions.json";
 
 
@@ -20,6 +21,7 @@ function App() {
         stats={userDB.stats}
       />
       <Statistics stats={statisticalDataDB} title="Upload stats" />
+      <Frendlist frendslist={frendslistDB}/>
       <Transaction transaction={transactionDB} />
     </>
   );
