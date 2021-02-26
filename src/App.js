@@ -19,8 +19,8 @@ function App() {
         avatar={userDB.avatar}
         stats={userDB.stats}
       />
-      <Statistics stats={statisticalDataDB} title="Upload stats"/>
-      <Transaction transaction= {transactionDB} />
+      <Statistics stats={statisticalDataDB} title="Upload stats" />
+      <Transaction transaction={transactionDB} />
     </>
   );
 }
