@@ -1,0 +1,15 @@
+.transactionHistory {
+  widows: 450px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.tbody {
+  background: cadetblue;
+}
+
+.tbody:nth-child(odd) {
+  background: lime;
+}

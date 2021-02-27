@@ -2,7 +2,7 @@ import React from "react";
 import style from "./FriendList.module.css";
 
 function FriendList({id, name, avatar, isOnline }) {
-  console.log("frendslistItem", avatar, name, isOnline)
+  // console.log("frendslistItem", avatar, name, isOnline)
   return (
     <li key={id} className={style.item}>
       <span className={isOnline ? style.statOnline : style.statOffline}></span>
